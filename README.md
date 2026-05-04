@@ -2,48 +2,40 @@
 
 ## Descripción del proyecto
 
-Este proyecto corresponde a una actividad de Programación Orientada a Objetos desarrollada en Java. Su propósito es ampliar un sistema básico de contenidos audiovisuales, incorporando nuevas clases, relaciones entre objetos y subclases.
+Este proyecto corresponde a la actividad de Programación Orientada a Objetos sobre la ampliación de contenidos audiovisuales. El proyecto base contenía las clases `ContenidoAudiovisual`, `Pelicula`, `SerieDeTV` y `Documental`.
 
-El sistema parte de la clase abstracta `ContenidoAudiovisual`, junto con las clases originales `Pelicula`, `SerieDeTV` y `Documental`. A partir de esta base, se añadieron nuevas clases para representar actores, temporadas, investigadores y contenidos digitales actuales.
+El trabajo realizado consistió en agregar nuevas clases, nuevas relaciones y dos nuevas subclases para ampliar el funcionamiento del sistema.
 
 ## Objetivo
 
-Ampliar el proyecto original aplicando conceptos de Programación Orientada a Objetos, como herencia, asociación, agregación, composición y polimorfismo.
+Aplicar conceptos de Programación Orientada a Objetos en Java, como herencia, asociación, agregación, composición y polimorfismo, dentro de un proyecto ya existente.
 
 ## Clases añadidas
 
-### Nuevas clases relacionadas
+Se agregaron las siguientes clases:
 
 - `Actor`
 - `Temporada`
 - `Investigador`
-
-### Nuevas subclases
-
 - `PeliculaStreaming`
 - `TransmisionEnVivo`
 
 ## Relaciones implementadas
 
-| Clase principal | Clase relacionada | Relación | Método implementado |
-|---|---|---|---|
-| `Pelicula` | `Actor` | Asociación | `agregarActor()` |
-| `SerieDeTV` | `Temporada` | Composición | `agregarTemporada()` |
-| `Documental` | `Investigador` | Agregación | `agregarInvestigador()` |
-| `PeliculaStreaming` | `ContenidoAudiovisual` | Herencia | `mostrarDetalles()` |
-| `TransmisionEnVivo` | `ContenidoAudiovisual` | Herencia | `mostrarDetalles()` |
+- `Pelicula` se relaciona con `Actor` mediante asociación.
+- `SerieDeTV` se relaciona con `Temporada` mediante composición.
+- `Documental` se relaciona con `Investigador` mediante agregación.
+- `PeliculaStreaming` y `TransmisionEnVivo` heredan de `ContenidoAudiovisual`.
 
-## Funcionalidades nuevas
+## Funcionalidades agregadas
 
-- Registro de actores asociados a una película.
-- Registro de temporadas dentro de una serie de televisión.
-- Registro de investigadores asociados a un documental.
-- Creación de contenidos de tipo película en streaming.
-- Creación de contenidos de tipo transmisión en vivo.
-- Visualización de información específica mediante el método `mostrarDetalles()`.
-- Prueba funcional del sistema mediante la clase `PruebaAudioVisual`.
+- Se pueden agregar actores a una película.
+- Se pueden agregar temporadas a una serie.
+- Se pueden agregar investigadores a un documental.
+- Se añadieron contenidos actuales como películas en streaming y transmisiones en vivo.
+- Se actualizó la clase `PruebaAudioVisual` para probar el funcionamiento del sistema.
 
-## Estructura de carpetas
+## Estructura del proyecto
 
 ```text
 poo_unidad1_contenidos_audiovisuales/
@@ -65,34 +57,25 @@ poo_unidad1_contenidos_audiovisuales/
 └── .gitignore
 
 
-Instrucciones de instalación y uso
-1. Clonar el repositorio
+Instrucciones para clonar y ejecutar
+Clonar el repositorio:
 git clone https://github.com/JuanXavierPeralta/poo_unidad1_contenidos_audiovisuales.git
-2. Importar el proyecto en Eclipse
 Abrir Eclipse.
-Seleccionar File > Import.
-Elegir Existing Projects into Workspace.
+Importar el proyecto con la opción:
+File > Import > Existing Projects into Workspace
 Seleccionar la carpeta del proyecto clonado.
-Finalizar la importación.
-3. Ejecutar el proyecto
-
 Ejecutar la clase principal:
-
 src/poo/PruebaAudioVisual.java
-
-Al ejecutar esta clase, se crean objetos de las clases principales, se agregan actores, temporadas e investigadores, y se muestran los detalles del sistema en consola.
-
-Mejoras implementadas:
-Incorporación de nuevas clases relacionadas con las clases originales.
-Aplicación de asociación, composición y agregación.
-Creación de nuevas subclases orientadas a contenidos digitales actuales.
-Implementación de métodos para agregar objetos relacionados.
-Actualización de la clase principal para validar el funcionamiento del sistema.
-Elaboración de un diagrama de clases UML mediante draw.io.
+Mejoras realizadas
+Se agregaron nuevas clases al sistema.
+Se implementaron relaciones entre clases.
+Se crearon dos nuevas subclases de ContenidoAudiovisual.
+Se elaboró un diagrama de clases UML en draw.io.
+Se probó el funcionamiento del sistema desde PruebaAudioVisual.
 
 Herramientas utilizadas:
 Java
-Eclipse IDE
+Eclipse
 GitHub
 draw.io
 
