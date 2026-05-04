@@ -67,17 +67,17 @@ Seleccionar la carpeta del proyecto clonado.
 Ejecutar la clase principal:
 src/poo/PruebaAudioVisual.java
 
-##Mejoras realizadas
+## Mejoras realizadas
 Se agregaron nuevas clases al sistema.
 Se implementaron relaciones entre clases.
 Se crearon dos nuevas subclases de ContenidoAudiovisual.
 Se elaboró un diagrama de clases UML en draw.io.
 Se probó el funcionamiento del sistema desde PruebaAudioVisual.
 
-##Herramientas utilizadas:
+## Herramientas utilizadas:
 Java
 Eclipse
 GitHub
 draw.io
 
-##Autor: Juan Xavier Peralta León
+## Autor: Juan Xavier Peralta León
